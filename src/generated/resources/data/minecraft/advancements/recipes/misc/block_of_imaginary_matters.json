@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_imaginary_matters": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "generic_ae:imaginary_matters"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:block_of_imaginary_matters"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_imaginary_matters",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:block_of_imaginary_matters"
+    ]
+  },
+  "sends_telemetry_event": false
+}
