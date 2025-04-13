@@ -2,11 +2,7 @@ package hy.forge.generic_ae;
 
 import hy.forge.generic_ae.blocks.Block$BlockOfImaginaryMatters;
 import hy.forge.generic_ae.blocks.BlockFEPort;
-import hy.forge.generic_ae.items.BlockItemFEPort;
-import hy.forge.generic_ae.items.BlockItem$BlockOfImaginaryMatters;
-import hy.forge.generic_ae.items.ItemGenericProcessor;
-import hy.forge.generic_ae.items.ItemImaginaryMatters;
-import hy.forge.generic_ae.items.ItemPrintedGenericProcessor;
+import hy.forge.generic_ae.items.*;
 import hy.forge.generic_ae.tile.TileFEPort;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -39,6 +35,8 @@ public class GAERegistries {
             ITEMS.register("imaginary_matters", ItemImaginaryMatters::new);
     public static final RegistryObject<Item> ITEM_FE_PORT =
             ITEMS.register("fe_port", BlockItemFEPort::new);
+    public static final RegistryObject<Item> ITEM_ENTANGLED_CRAFTING_ARRAY =
+            ITEMS.register("entangled_crafting_arrays", ItemEntangledCraftingArray::new);
     
     public static final RegistryObject<Block> BLOCK_BLOCK_OF_IMAGINARY_MATTERS =
             BLOCKS.register("block_of_imaginary_matters", Block$BlockOfImaginaryMatters::new);
@@ -62,6 +60,7 @@ public class GAERegistries {
                                 output.accept(ITEM_IMAGINARY_MATTERS.get());
                                 output.accept(ITEM_BLOCK_OF_IMAGINARY_MATTERS.get());
                                 output.accept(ITEM_FE_PORT.get());
+                                output.accept(ITEM_ENTANGLED_CRAFTING_ARRAY.get());
                             })
                             .build()
             );

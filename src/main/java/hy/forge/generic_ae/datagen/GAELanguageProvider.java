@@ -17,6 +17,7 @@ public class GAELanguageProvider extends LanguageProvider {
         this.add(GAERegistries.ITEM_BLOCK_OF_IMAGINARY_MATTERS.get(), "Block of Imaginary Matters");
         this.add(GAERegistries.ITEM_IMAGINARY_MATTERS.get(), "Imaginary Matters");
         this.add(GAERegistries.ITEM_FE_PORT.get(), "FE Port");
+        this.add("item.entangled_crafting_array.tooltip", "Entangled by Quantum, which make it dense");
         
         this.add("itemGroup.generic_ae.generic_ae", "Generic AE");
     }
